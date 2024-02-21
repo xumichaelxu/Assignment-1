@@ -5,7 +5,7 @@ html {
   font-family: 'Lato', sans-serif;
   background-color: #dae4d7;
   margin:0;
-  overflow: hidden;
+}
 
 .container {
   display: flex;
@@ -89,5 +89,17 @@ tr:hover {
   font-size: 14px;
   margin-top: 1px;
 }
+
+@media (max-width: 600px) {
+  body {
+    background-color: #dae4d7;
+  }
+}
+
+#timestring {
+  text-align: center;
+  width: 100%;
+}
+
 
 /* ok */
