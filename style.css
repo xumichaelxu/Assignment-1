@@ -1,0 +1,93 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  background-color: #dae4d7;
+  margin:0;
+  overflow: hidden;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border: 2px solid #000000;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 2px;
+  font-size: 36px;
+  color: #333333;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333333;
+}
+
+h4 {
+  margin-bottom: 1px;
+  margin-top: 1px;
+  font-size: 12px;
+  color: #666666;
+}
+
+table {
+  width: 40%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid #030303;
+}
+
+#PSItable td:first-child {
+  text-align: left;}
+
+
+th, td {
+  padding: 8px;
+  border: 1px solid #a9a9a9;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(97, 147, 97);
+  border-width: 1px;
+  color: #333333;
+}
+
+#PSItable th:first-child {
+  text-align: left;}
+
+tr:hover {
+  background-color: #71c6af;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+}
+
+.refresh-button {
+  display: block;
+  margin: auto;
+  background-color: #8eb798d9;
+  border: 2px solid #787a77;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 1px;
+}
+
+.link {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  margin-top: 1px;
+}
+
+/* ok */

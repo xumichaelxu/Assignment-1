@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 1_Michael S. Susanto</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Pollutant Standards Index</h1>
+      <h2>Singapore</h2>
+      <span class="status" id="status"></span><br />
+      <table id="PSItable">
+        <tr>
+          <th>Metric</th>
+          <th>Central</th>
+          <th>West</th>
+          <th>East</th>
+          <th>North</th>
+          <th>South</th>
+        </tr>
+      </table>
+
+      <footer>
+        <button
+          class="refresh-button"
+          onClick="window.location.href=window.location.href"
+        >
+          Refresh
+        </button>
+        <br />
+        <h4 id="timestring" style="color: #212020"></h4>
+
+        <div class="link">
+          by
+          <a
+            href="https://issuu.com/xumichaelxu/docs/michael_s._susanto_portfolio_pages"
+            target="_blank"
+          >
+            Michael S. Susanto
+          </a>
+
+          by
+          <a href="https://beta.data.gov.sg/" target="_blank"> gov </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
