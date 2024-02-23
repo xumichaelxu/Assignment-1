@@ -24,8 +24,7 @@ function updateStatus(status) {
     });
     statusElement.textContent = "Status : " + statusText;
     statusElement.style.color = "green";
-
-fetchData();
+}
 
 function updateTable(data) {
     let readings = data.items[0].readings;
@@ -71,6 +70,9 @@ function updateTimestamp() {
     let timestamp = new Date().toLocaleString("en-SG", { timeZone: "Asia/Singapore" });
     $("#timestring").text("Updated at: " + timestamp);
 }
+
+// Call fetchData function to fetch data from the API
+fetchData();
 
 // Update the timestamp every second
 setInterval(updateTimestamp, 1000);
