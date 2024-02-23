@@ -7,9 +7,9 @@ function fetchData() {
             return response.json();
         })
         .then(data => {
-            updateTable(data); // Call the function to update the table with the fetched data
-            updateTimestamp(); // Call the function to update the timestamp
-            updateStatus(data.api_info.status); // Call the function to update the status
+            updateTable(data);
+            updateTimestamp();
+            updateStatus(data.api_info.status);
         })
         .catch(error => {
             console.error('There was a problem with your fetch operation:', error);
@@ -23,8 +23,7 @@ function updateStatus(status) {
         return char.toUpperCase();
     });
     statusElement.textContent = "Status : " + statusText;
-    statusElement.style.color = "green"; // You might want to adjust this based on the actual status
-}
+    statusElement.style.color = "green";
 
 fetchData();
 
